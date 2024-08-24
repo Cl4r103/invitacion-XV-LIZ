@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Cardinal';
+  src: url('fonts/Cardinal-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Princeton';
+  src: url('fonts/Princeton-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#screen1 {
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  z-index: 2;
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el texto */
+  padding: 30px;
+  border-radius: 10px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-title {
+  font-size: 6em; /* Aumentar el tamaño del título */
+  margin-bottom: 10px;
+  font-family: 'Lobster', cursive; /* Fuente para el título */
+}
+
+.sub-title {
+  font-size: 5em; /* Aumentar el tamaño del nombre */
+  margin-bottom: 20px;
+  font-family: 'Cardinal', serif; /* Fuente Cardinal para el nombre */
+}
+
+.main-phrase {
+  font-size: 3em; /* Aumentar el tamaño de la frase */
+  margin-bottom: 40px;
+  font-family: 'Tangerine', cursive; /* Fuente Tangerine para la frase */
+  line-height: 1.5; /* Mejorar la legibilidad */
+  word-wrap: break-word; /* Asegurar que la frase se ajuste en pantallas pequeñas */
+}
+
+.button {
+  padding: 15px 30px;
+  font-size: 1.5em;
+  color: white;
+  background-color: #4caf50; /* Verde brillante */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones para hover */
+}
+
+.button__negative {
+  background-color: #f44336; /* Rojo */
+}
+
+.button:hover {
+  background-color: #2e7d32; /* Color al pasar el ratón por encima */
+  transform: scale(1.05); /* Efecto de escalado al pasar el ratón */
+}
+
+/* Estilos para la segunda pantalla */
+#screen2 {
+  background-size: cover;
+  background-position: center;
+}
+
+.event-content {
+  z-index: 2;
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el texto */
+  padding: 30px;
+  border-radius: 10px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.event-title {
+  font-size: 4em;
+  color: white;
+  margin-bottom: 30px;
+  font-family: 'Lobster', cursive;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.countdown-box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: #FFD700;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Princeton', serif;
+}
+
+.event-details {
+  font-size: 1.5em;
+  color: white;
+  margin-top: 30px;
+}
+
+.event-details a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.confirmation-buttons {
+  margin-top: 20px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a los 15 de Liz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <script src="leaflet/leaflet.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Princeton:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Pantalla con fondo de bosque -->
+    <div class="screen" id="screen1" style="background-image: url('images/forest-image.jpg');">
+        <div class="content">
+            <h1 class="main-title">MIS 15 AÑOS</h1>
+            <h2 class="sub-title">LIZ</h2>
+            <p class="main-phrase">15 años, mezcla rara, dulce y hermosa.....<br>
+            Edad de ensueños, emociones y nuevas experiencias.<br>
+            Porque son parte de mi vida y porque simplemente los quiero,<br>
+            los invito a compartir....... ¡La noche de mis sueños!</p>
+            <button class="button" onclick="nextScreen()">Siguiente</button>
+        </div>
+    </div>
+
+    <!-- Segunda pantalla con cuenta regresiva y detalles del evento -->
+    <div class="screen" id="screen2" style="display: none; background-image: url('images/event-background.jpg');">
+        <div class="event-content">
+            <h1 class="event-title">MIS 15 AÑOS</h1>
+            <div class="countdown-container">
+                <div class="countdown-box" id="countdown-days">00d</div>
+                <div class="countdown-box" id="countdown-hours">00h</div>
+                <div class="countdown-box" id="countdown-minutes">00m</div>
+                <div class="countdown-box" id="countdown-seconds">00s</div>
+            </div>
+            <div class="event-details">
+                <p><strong>Fecha y Hora:</strong> 15 de Septiembre, 20:00</p>
+                <p><strong>Salón:</strong> Salón de Eventos Fantásticos</p>
+                <p><strong>Ubicación:</strong> <a href="https://www.google.com/maps/place/-30.8352027,-66.6963733" target="_blank">Ver en Google Maps</a></p>
+            </div>
+            <div class="confirmation-buttons">
+                <a class="button" href="https://wa.me/543804262647?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%2015%20años%20de%20Liz." target="_blank">Sí, asistiré</a>
+                <a class="button button__negative" href="https://wa.me/5491123456789?text=Hola%2C%20no%20podré%20asistir%20a%20los%2015%20años%20de%20Liz." target="_blank">No, no podré asistir</a>
+            </div>
+            <div id="map" style="height: 300px; width: 100%; margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
